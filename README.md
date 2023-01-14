@@ -1,5 +1,5 @@
 # tailwind-by-webpack
-- this project is an example for use tailwind in pure ts porject and bundle it by webpack
+this project is an example for use tailwind in pure ts porject and bundle it by webpack
 
 # scripts
 ```
