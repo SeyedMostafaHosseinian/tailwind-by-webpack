@@ -6,7 +6,7 @@
 //run project on the local server for develop
 yarn start 
 
-//buld the project
+//build the project
 yarn build
 
 ```
