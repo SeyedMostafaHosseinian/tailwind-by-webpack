@@ -32,23 +32,25 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            title: 'the app by Observables',
             filename: 'index.html',
             template: './src/index.html'
         }),
         new ConyPlugin({
-            patterns:[{from: './src/assets', to:'./assets'}]
+            patterns: [{from: './src/assets', to: './assets'}]
         })
     ],
     devServer: {
-        port: '4506',
+        port: '4500',
         open: true,
         liveReload: true,
         static: ['./src', './public']
     },
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
-    }
+    // resolve: {
+    //     extensions: ['.tsx', '.ts', '.js'],
+    // },
+    performance: {
+        hints: false,
+    },
 }
 // if (process.env.NODE_ENV !== 'production') {
 //     module.exports.plugins = (module.exports.plugins || []).concat([
