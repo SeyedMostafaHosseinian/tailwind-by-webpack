@@ -7,14 +7,14 @@
     <title>project by tailwind css</title>
 </head>
 <body>
-    <img src="" />
+<img src=""/>
 <div id="parent" class="dark:bg-gray-900">
     <!-- header -->
-    <div class=" container mx-auto py-5 px-6 flex items-center justify-between">
+    <div class="container mx-auto py-5 px-5 md:px-0 flex items-center justify-between">
         <figure class="w-[120px]">
-            <img src="./assets/img/logo.svg" class="inline" alt="logo"/>
+            <img src="./assets/img/logo.svg" class="inline mt-1" alt="logo"/>
         </figure>
-        <div class="hidden sm:inline-flex justify-between lg:w-[550px] md:w-96 ">
+        <div class="hidden md:inline-flex justify-between md:w-128 md:mis-3">
             <a href="#" class="font-IRANYekan dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">tutorials</a>
             <a href="#" class="dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">docs</a>
             <a href="#" class="dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">term of use</a>
@@ -22,40 +22,76 @@
             <a href="#" class="dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">buy me a coffee</a>
         </div>
         <div class="flex justify-end w-[210px] items-center">
-            <div class="w-[30%]">
-                <!-- light icon -->
-                <div id="theme-switcher" class="bg-white  dark:bg-gray-800 w-[30px] h-[30px] flex items-center justify-center rounded-[5px] shadow-sm shadow-gray-400 dark:shadow-gray-700" >
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden dark:animate-spin dark:flex w-6 h-6">
-                        <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="dark:stroke-sky-500 stroke-slate-500"></path>
-                        <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="dark:stroke-sky-500 stroke-slate-500"></path>
+            <div class="w-[30%] flex justify-end">
+                <div id="theme-switcher"
+                     class="bg-white  dark:bg-gray-800 w-10 h-10 flex items-center justify-center rounded-md shadow-sm shadow-gray-400 dark:shadow-gray-700">
+                    <!-- light icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="hidden dark:animate-spin dark:flex w-6 h-6">
+                        <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                              class="dark:stroke-sky-500 stroke-slate-500"></path>
+                        <path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                              class="dark:stroke-sky-500 stroke-slate-500"></path>
                     </svg>
                     <!-- dark icon -->
                     <svg viewBox="0 0 24 24" fill="none" class="dark:hidden flex w-6 h-6">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z" class="fill-transparent stroke-sky-500"></path>
-                        <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-slate-400 fill-sky-500"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-slate-400 fill-sky-500"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                              class="fill-transparent stroke-sky-500"></path>
+                        <path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                              class=" fill-sky-500"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                              class=" fill-sky-500"></path>
                     </svg>
                 </div>
             </div>
-            <button type="button" class="w-28 bg-orange-600 text-white px-3 py-2 rounded-3xl shadow-2xl shadow-orange-600 hover:bg-orange-700 transition-all">
+            <button type="button"
+                    class="hidden w-28 bg-orange-600 text-white px-3 py-2 rounded-md shadow-2xl shadow-orange-400 md:flex mis-3 hover:bg-orange-700 transition-all">
                 get started
             </button>
+            <!-- humburger-btn -->
+            <div id="humberger-button" class="cursor-pointer flex flex-col mis-2 w-7 h-5 justify-between items-center relative z-45 md:hidden">
+                <div class="w-6 h-1 bg-gray-900 dark:bg-gray-600"></div>
+                <div class="w-6 h-1 bg-gray-900 dark:bg-gray-600"></div>
+                <div class="w-6 h-1 bg-gray-900 dark:bg-gray-600"></div>
+            </div>
+            <!-- end humburger-btn -->
         </div>
     </div>
+    <!-- end header -->
+    <div id="menu-closer" class="fixed hidden w-full h-full top-0 opacity-60 bg-gray-800 z-1"></div>
+    <!-- hamburger-menu -->
+    <nav id="humberger-menu" class="pis-4 flex flex-col fixed top-0 -translate-x-full transition-all h-full bg-white w-4/5 z-40 dark:bg-gray-900">
+        <div class="w-full h-14 flex justify-end">
+            
+        </div>
+        <ul class="flex flex-col justify-between w-full  h-56">
+            <li><a href="#" class="font-IRANYekan dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">tutorials</a></li>
+            <li><a href="#" class="font-IRANYekan dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">blogs</a></li>
+            <li><a href="#" class="font-IRANYekan dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">docs</a></li>
+            <li><a href="#" class="font-IRANYekan dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">get started</a></li>
+            <li><a href="#" class="font-IRANYekan dark:hover:text-slate-200 dark:text-slate-400 hover:text-slate-500">buy me a cuffee</a></li>
+        </ul>
+        <button type="button" class=" w-28 mt-4 bg-orange-600 text-white px-3 py-2 rounded-sm hover:bg-orange-700 transition-all ease-in-out">
+            get started
+        </button>
+    </nav>
+    <!-- end hamburger-menu-tap -->
     <!-- section-1 -->
-    <div class="container flex mx-auto mt-10 lg:p-9 md:p-5 justify-between">
-        <div class="w-[400px] flex flex-col">
-            <h2 class="text-5xl font-black leading-tight w-full text-slate-900 dark:text-slate-400">
+    <div class="container flex flex-col items-center mx-auto mt-10 md:flex-row justify-between gap-y-10 md:items-start">
+        <div class="w-full flex flex-col items-center md:items-start md:justify-center md:h-96">
+            <h2 class="text-4xl text-center font-black leading-tight w-full text-slate-900 dark:text-slate-400 md:text-start">
                 Bring Everyone Together to build better products
             </h2>
-            <p class="mt-3 text-slate-400 w-8/12">
+            <p class="mt-3 text-slate-400 text-center md:text-start">
                 manage make its for software team to plan day-to-day tasks while keeping the larger teams the view
             </p>
             <button class=" w-32 mt-6 bg-orange-600 text-white px-3 py-2 rounded-3xl shadow-2xl shadow-orange-600">
                 get started
             </button>
         </div>
-        <div class="w-1/2">
+        <div class="w-full justify-center flex md:justify-end">
             <!-- <svg class="absolute -z-1 transform-[translate(-300px,-300px)]" xmlns="http://www.w3.org/2000/svg" width="814" height="814">
                 <rect class="dark:fill-gray-700" width="436" height="970" x="774" y="-62" fill="#FFF0EC"
                       fill-rule="evenodd"
@@ -64,46 +100,53 @@
             <img src="./assets/img/illustration-intro.svg" alt="intro">
         </div>
     </div>
+    <!-- end section-1 -->
 
     <!-- section-2 -->
-    <div class="container flex mx-auto mt-10 lg:p-9 md:p-5 justify-between">
-        <div class="w-[400px] flex flex-col">
-            <h4 class="text-3xl font-black leading-tight w-full text-slate-900 dark:text-slate-400">
+    <div class="container flex flex-col items-center mx-auto mt-14 md:flex-row justify-between gap-y-10 md:items-start">
+        <div class="w-full flex flex-col items-center">
+            <h4 class="text-3xl text-center font-black leading-tight w-full text-slate-900 dark:text-slate-400">
                 What's different about Manage?
             </h4>
-            <p class="mt-3 text-slate-400">
-                Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.            
+            <p class="mt-3 text-slate-400 text-center">
+                Manage provides all the functionality your team needs, without the complexity. Our software is
+                tailor-made for modern digital product teams.
             </p>
-           
         </div>
-        <div class=" flex flex-col justify-between h-[400px] items-center w-1/2">
+        <div class="flex flex-col justify-between items-center w-full md:h-96 md:justify-center">
             <div class="w-full flex justify-end">
                 <span class="rounded-3xl bg-orange-600 text-white w-[58px] h-[32px] flex justify-center items-center">1</span>
                 <div class="mis-5 w-[80%] flex flex-col">
-                    <h3 class="text-gray-900 text-2xl flex items-center dark:text-slate-400">Track company-wide progress</h3>
+                    <h3 class="text-gray-900 text-2xl flex items-center dark:text-slate-400">Track company-wide
+                        progress</h3>
                     <p class="text-slate-400">
-                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
-
+                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the
+                        milestone level all the way done to the smallest of details. Never lose sight of the bigger
+                        picture again.
                     </p>
                 </div>
             </div>
             <div class="w-full flex justify-end">
                 <span class="rounded-3xl bg-orange-600 text-white w-[58px] h-[32px] flex justify-center items-center">2</span>
                 <div class="mis-5 w-[80%] flex flex-col">
-                    <h3 class="text-gray-900 text-2xl flex items-center dark:text-slate-400">Track company-wide progress</h3>
+                    <h3 class="text-gray-900 text-2xl flex items-center dark:text-slate-400">Track company-wide
+                        progress</h3>
                     <p class="text-slate-400">
-                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
-
+                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the
+                        milestone level all the way done to the smallest of details. Never lose sight of the bigger
+                        picture again.
                     </p>
                 </div>
             </div>
             <div class="w-full flex justify-end">
                 <span class="rounded-3xl bg-orange-600 text-white w-[58px] h-[32px] flex justify-center items-center">3</span>
                 <div class="mis-5 w-[80%] flex flex-col">
-                    <h3 class="text-gray-900 text-2xl flex items-center dark:text-slate-400">Track company-wide progress</h3>
+                    <h3 class="text-gray-900 text-2xl flex items-center dark:text-slate-400">Track company-wide
+                        progress</h3>
                     <p class="text-slate-400">
-                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
-
+                        See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the
+                        milestone level all the way done to the smallest of details. Never lose sight of the bigger
+                        picture again.
                     </p>
                 </div>
             </div>
